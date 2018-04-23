@@ -123,6 +123,12 @@ export default {
     width: 125px;
 }
 
+@media only screen and (max-width: 960px) {
+  .img-circle {
+      display: none;
+  }
+}
+
 li {
   text-align: left;
 }
