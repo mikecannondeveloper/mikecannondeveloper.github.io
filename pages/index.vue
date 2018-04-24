@@ -1,6 +1,6 @@
 <template>
   <section class="container">
-    <div>
+    <div><br>
       <img class="img-circle" src="~/assets/profile.jpg">
       <h2 class="title">
         S. Michael Cannon
@@ -115,13 +115,13 @@ export default {
 }
 
 .img-circle {
-    float: left;
-    z-index: 3;
-    position: absolute; /*newly added*/
-    left: 20px; /*newly added*/
-    top: 5px;/*newly added*/
-    border-radius: 50%;
-    width: 125px;
+  float: left;
+  z-index: 3;
+  position: absolute; /*newly added*/
+  left: 20px; /*newly added*/
+  top: 15px;/*newly added*/
+  border-radius: 50%;
+  width: 125px;
 }
 
 @media only screen and (max-width: 960px) {
