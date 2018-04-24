@@ -41,6 +41,6 @@ module.exports = {
   ],
 
  'google-analytics': {
-    id: 'UA-73202553-2'
+    id: 'UA-73202553-3'
   }
 }
