@@ -12,7 +12,7 @@
       <b>Relevant Skills</b><hr><br>
       <ul v-for='skill in skills' :key="skill.index">
         <li>{{ skill }}</li>
-      </ul><br><br>
+      </ul><br>
       <div v-for='role in experience' :key="role.jobRole">
         <div class="jobrole">
           <b>{{ role.jobRole }}</b><p>{{ role.dateRange }}</p>
@@ -37,7 +37,7 @@ export default {
     return {
       skills: [
         'Advanced usage of Windows, Linux, and macOS systems (including Bash and Powershell)',
-        '4+ years of development experience in C++, Python, JS(Node, Vue, jQuery), VBS, VBA, PHP, SQL, and Dart',
+        '4+ years of development experience in C++, Python, JS (Node, Vue, jQuery), VBS, VBA, PHP, SQL, and Dart',
         'Agile Software Delivery using GitHub and Trello (Kanban+Scrum)',
         'Application Design, Development, Implementation, Documentation, and Training',
         'CompTIA A+ certified'
@@ -50,7 +50,8 @@ export default {
             'Built Windows Installer for advanced automation appliance, which was powered by Vagrant, Docker, and Ansible',
             'Built Ansible modules for internal use to automate deployment of customer hardware',
             'Built successful client applications in Electron-Vue with estimated ROI over $400k',
-            'Successfully automated multiple projects, using Python scripts to convert, consolidate, or migrate data between platforms for multiple clients'
+            'Successfully automated multiple projects, using Python scripts to convert, consolidate, or migrate data between platforms for multiple clients',
+            'Wrote Python script to translate Cisco ACE configuration file to F5 configuration file'
           ]
         },
         {
