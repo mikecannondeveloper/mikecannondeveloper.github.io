@@ -7,8 +7,8 @@
       </h2>
       <h3 class="subtitle">
         Full Stack Software Developer
-      </h3><br>
-      <p class="subtext"><a href="mailto:mikethedeveloper@gmail.com">mikethedeveloper@gmail.com</a></p><br>
+      </h3>
+      <p class="email"><a href="mailto:mikethedeveloper@gmail.com">mikethedeveloper@gmail.com</a></p><br><br>
       <b>Relevant Skills</b><hr><br>
       <ul v-for='skill in skills' :key="skill.index">
         <li>{{ skill }}</li>
@@ -133,11 +133,21 @@ li {
   text-align: left;
 }
 
-.subtext {
+.subtext, .email {
   text-align: center;
 }
 
 .links {
   padding-top: 15px;
+}
+
+@media print {
+  .img-circle {
+    display: none;
+  }
+  .subtext {
+    display: none;
+  }
+
 }
 </style>
