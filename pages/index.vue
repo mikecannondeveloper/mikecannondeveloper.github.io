@@ -1,10 +1,10 @@
 <template>
   <section class="container">
     <div><br>
-      <img class="img-circle" src="~/assets/profile.jpg">
       <h2 class="title">
         S. Michael Cannon
       </h2>
+      <img class="img-circle" src="~/assets/profile.jpg">
       <h3 class="subtitle">
         Full Stack Software Developer
       </h3>
@@ -116,7 +116,7 @@ export default {
 
 .img-circle {
   float: left;
-  z-index: 3;
+  z-index: 2;
   position: absolute; /*newly added*/
   left: 20px; /*newly added*/
   top: 15px;/*newly added*/
@@ -124,9 +124,15 @@ export default {
   width: 125px;
 }
 
-@media only screen and (max-width: 960px) {
+@media only screen and (max-width: 500px) {
   .img-circle {
-      display: none;
+    width: 50%;
+    left: 25%;
+    right: 25%;
+    z-index: 0;
+    position: relative;
+    margin-bottom: 15px;
+    float: none;
   }
 }
 
