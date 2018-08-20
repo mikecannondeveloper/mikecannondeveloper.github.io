@@ -8,7 +8,7 @@
       <h3 class="subtitle">
         Full Stack Software Developer
       </h3>
-      <p class="email"><a href="mailto:mikecannondeveloper@gmail.com">mikethedeveloper@gmail.com</a></p><br><br>
+      <p class="email"><a href="mailto:mikecannondeveloper@gmail.com">mikecannondeveloper@gmail.com</a></p><br><br>
       <b>Relevant Skills</b><hr><br>
       <ul v-for='skill in skills' :key="skill.index">
         <li>{{ skill }}</li>
