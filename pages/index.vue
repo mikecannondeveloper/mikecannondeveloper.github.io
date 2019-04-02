@@ -44,12 +44,13 @@ export default {
       ],
       experience: [
         {
-          'jobRole': 'Automation Engineer (World Wide Technology)',
+          'jobRole': 'Core Automation Developer (World Wide Technology)',
           'dateRange': 'Aug 2016-Current',
           'items': [
             'Built Windows Installer for advanced automation appliance, which was powered by Vagrant, Docker, and Ansible',
             'Built Ansible modules for internal use to automate deployment of customer hardware',
-            'Built successful client applications in Electron-Vue with estimated ROI over $400k',
+            'Built successful client applications in Electron-Vue (NodeJS runtime) with estimated ROI over $400k',
+            'Built successful web applications in VueJS hosted on Cloudfoundry using Jenkins for Continous Integration with MongoDB',
             'Successfully automated multiple projects, using Python scripts to convert, consolidate, or migrate data between platforms for multiple clients',
             'Wrote Python script to translate Cisco ACE configuration file to F5 configuration file'
           ]
@@ -61,6 +62,7 @@ export default {
             'Automated SAP report and data extraction for use in MySQL database',
             'Automated daily data migration across corporate networks from SAP to Oracle/Tableau',
             'Built an intranet web application to manage production and reporting tools for management and other employees in PHP using modern web design standards (HTML5, jQuery, CSS)',
+            'Developed digital signage solution for warehouse to display hourly production metrics to floor',
             'Implemented Agile Processes (Kanban), often delivering complete solutions within days of request',
             'Maintained MySQL database and intranet web server',
             'Implemented process improvements using custom applications that save the company $200k+ a year in employee time'
