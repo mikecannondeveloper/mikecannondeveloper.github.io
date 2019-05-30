@@ -1,7 +1,7 @@
 {
-  "name": "nuxt-resume-site",
+  "name": "mikecannondeveloper.github.io",
   "version": "1.0.4",
-  "description": "Over engineered resume site",
+  "description": "An over engineered resume site",
   "author": "mikecannondeveloper@gmail.com",
   "private": true,
   "scripts": {
