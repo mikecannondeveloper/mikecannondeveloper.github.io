@@ -37,7 +37,7 @@ export default {
     return {
       skills: [
         'Advanced usage of Windows, Linux, and macOS systems (including Bash and Powershell)',
-        '4+ years of development experience in C++, Python, JS (Node, Vue, jQuery), VBS, VBA, PHP, SQL, and Dart',
+        '5+ years of professional development experience Python, JS (Node, Vue, jQuery), VBS, VBA, PHP, SQL, and Dart',
         'Agile Software Delivery using GitHub and Trello (Kanban+Scrum)',
         'Application Design, Development, Implementation, Documentation, and Training',
         'CompTIA A+ certified'
