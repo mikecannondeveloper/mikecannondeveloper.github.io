@@ -8,6 +8,7 @@
       <h3 class="subtitle">
         Full Stack Software Developer
       </h3>
+      <p class="siteUrl"><a href="https://mikecannon.dev">https://mikecannon.dev</a></p>
       <p class="email"><a href="mailto:mikecannondeveloper@gmail.com">mikecannondeveloper@gmail.com</a></p><br><br>
       <b>Relevant Skills</b><hr><br>
       <ul v-for='skill in skills' :key="skill.index">
@@ -150,6 +151,12 @@ li {
   padding-top: 15px;
 }
 
+@media only screen {
+  .siteUrl {
+    display: none;
+  }
+}
+
 @media print {
   .img-circle {
     display: none;
@@ -157,6 +164,9 @@ li {
   .subtext {
     display: none;
   }
-
+  .siteUrl {
+    display: block;
+    text-align: center;
+  }
 }
 </style>
