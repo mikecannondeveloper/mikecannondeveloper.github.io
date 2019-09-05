@@ -9,7 +9,7 @@
         Full Stack Software Developer
       </h3>
       <p class="siteUrl"><a href="https://mikecannon.dev">https://mikecannon.dev</a></p>
-      <p class="email"><a href="mailto:mikecannondeveloper@gmail.com">mikecannondeveloper@gmail.com</a></p><br><br>
+      <p class="email"><a href="mailto:mikecannondeveloper@gmail.com">mikecannondeveloper@gmail.com</a></p><br>
       <b>Relevant Skills</b><hr><br>
       <ul v-for='skill in skills' :key="skill.index">
         <li>{{ skill }}</li>
@@ -164,13 +164,12 @@ li {
   .subtext {
     display: none;
   }
-  .email {
-    color: black;
+  a:link, a:visited {
+    color: #000;
   }
   .siteUrl {
     display: block;
     text-align: center;
-    color: black;
   }
 }
 </style>
