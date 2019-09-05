@@ -164,9 +164,13 @@ li {
   .subtext {
     display: none;
   }
+  .email {
+    color: black;
+  }
   .siteUrl {
     display: block;
     text-align: center;
+    color: black;
   }
 }
 </style>
