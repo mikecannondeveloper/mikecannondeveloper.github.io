@@ -45,21 +45,27 @@ export default {
       ],
       experience: [
         {
-          'jobRole': 'Core Automation Developer (World Wide Technology)',
-          'dateRange': 'Aug 2016-Current',
-          'items': [
+          jobRole: 'UI Developer (Capital One)',
+          dateRange: 'Oct 2019->Current',
+          items: [
+            'Built functional POC for VueJS based flowchart software for internal project'
+          ]
+        },
+        {
+          jobRole: 'Core Automation Developer (World Wide Technology)',
+          dateRange: 'Aug 2016->Sep2019',
+          items: [
             'Built Windows Installer for advanced automation appliance, which was powered by Vagrant, Docker, and Ansible',
-            'Built Ansible modules for internal use to automate deployment of customer hardware',
-            'Built successful client applications in Electron-Vue (NodeJS runtime) with estimated ROI over $400k',
+            'Built successful client applications in Electron-Vue (NodeJS runtime) with estimated ROI over $450k',
             'Built successful web applications in VueJS hosted on Cloudfoundry using Jenkins for Continous Integration with MongoDB',
             'Successfully automated multiple projects, using Python scripts to convert, consolidate, or migrate data between platforms for multiple clients',
             'Wrote Python script to translate Cisco ACE configuration file to F5 configuration file'
           ]
         },
         {
-          'jobRole': 'Analyst/Programmer (World Wide Technology)',
-          'dateRange': 'Jun 2014- Aug 2016',
-          'items': [
+          jobRole: 'Analyst/Programmer (World Wide Technology)',
+          dateRange: 'Jun 2014->Aug 2016',
+          items: [
             'Automated SAP report and data extraction for use in MySQL database',
             'Automated daily data migration across corporate networks from SAP to Oracle/Tableau',
             'Built an intranet web application to manage production and reporting tools for management and other employees in PHP using modern web design standards (HTML5, jQuery, CSS)',
@@ -70,9 +76,9 @@ export default {
           ]
         },
         {
-          'jobRole': 'Freelance Project (Porras Law)',
-          'dateRange': 'Sep 2015',
-          'items': [
+          jobRole: 'Freelance Project (Porras Law)',
+          dateRange: 'Sep 2015',
+          items: [
             'Utilized Open Source IP Analysis techniques',
             'Built Python scripts for IP data retrieval and analysis',
             'Assisted with Web Development/Administration'
