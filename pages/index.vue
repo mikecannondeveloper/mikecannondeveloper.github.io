@@ -48,7 +48,8 @@ export default {
           jobRole: 'UI Developer (Capital One)',
           dateRange: 'Oct 2019->Current',
           items: [
-            'Built functional POC for VueJS based flowchart software for internal project'
+            'Built integrated UI solution for marketing campaign management using VueJS, Typescript, & Rappid',
+            'Updated and maintained existing API solution using Java Springboot and PostgresDB'
           ]
         },
         {
