@@ -1,4 +1,4 @@
-<template>
+  <template>
   <section class="container">
     <div><br>
       <h2 class="title">
@@ -37,30 +37,27 @@ export default {
   data() {
     return {
       skills: [
-        'Advanced usage of Windows, Linux, and macOS systems (including Bash and Powershell)',
-        '5+ years of professional development experience Python, JS (Node, Vue, jQuery), VBS, VBA, PHP, SQL, and Dart',
-        'Agile Software Delivery using GitHub and Trello (Kanban+Scrum)',
-        'Application Design, Development, Implementation, Documentation, and Training',
-        'CompTIA A+ certified'
+        '5+ years of professional spftware development experience in Python, JavaScript (NodeJs, Vue, jQuery), PHP, and SQL ',
+        'Agile Software Delivery',
+        'Software Application Design, Development, Implementation, Documentation, and Training',
+        'CompTIA A+ and Project+ certified'
       ],
       experience: [
         {
-          jobRole: 'UI Developer (Capital One)',
+          jobRole: 'Frontend Developer (Capital One)',
           dateRange: 'Oct 2019->Current',
           items: [
-            'Built integrated UI solution for marketing campaign management using VueJS, Typescript, & Rappid',
-            'Updated and maintained existing API solution using Java Springboot and PostgresDB'
+            'Built integrated UI solution for marketing campaign management using VueJS, Typescript, & RappidJS',
+            'Updated and maintained existing REST API solution using Java Springboot and PostgresSQL'.
           ]
         },
         {
           jobRole: 'Core Automation Developer (World Wide Technology)',
           dateRange: 'Aug 2016->Sep2019',
           items: [
-            'Built Windows Installer for advanced automation appliance, which was powered by Vagrant, Docker, and Ansible',
-            'Built successful client applications in Electron-Vue (NodeJS runtime) with estimated ROI over $450k',
-            'Built successful web applications in VueJS hosted on Cloudfoundry using Jenkins for Continous Integration with MongoDB',
-            'Successfully automated multiple projects, using Python scripts to convert, consolidate, or migrate data between platforms for multiple clients',
-            'Wrote Python script to translate Cisco ACE configuration file to F5 configuration file'
+            'Built multiple client applications in Electron-Vue (NodeJS runtime) with estimated ROI over $450k',
+            'Built multiple internal facing web applications in VueJS hosted on Cloudfoundry using Jenkins for CI/CD with NodeJS & MongoDB',
+            'Successfully automated multiple projects, using Python scripts to convert, consolidate, or migrate data between platforms for multiple clients'
           ]
         },
         {
@@ -68,21 +65,8 @@ export default {
           dateRange: 'Jun 2014->Aug 2016',
           items: [
             'Automated SAP report and data extraction for use in MySQL database',
-            'Automated daily data migration across corporate networks from SAP to Oracle/Tableau',
-            'Built an intranet web application to manage production and reporting tools for management and other employees in PHP using modern web design standards (HTML5, jQuery, CSS)',
-            'Developed digital signage solution for warehouse to display hourly production metrics to floor',
-            'Implemented Agile Processes (Kanban), often delivering complete solutions within days of request',
-            'Maintained MySQL database and intranet web server',
-            'Implemented process improvements using custom applications that save the company $200k+ a year in employee time'
-          ]
-        },
-        {
-          jobRole: 'Freelance Project (Porras Law)',
-          dateRange: 'Sep 2015',
-          items: [
-            'Utilized Open Source IP Analysis techniques',
-            'Built Python scripts for IP data retrieval and analysis',
-            'Assisted with Web Development/Administration'
+            'Built an intranet web application to manage production and reporting tools for management and other employees in PHP, MySQL, and jQuery',
+            'Implemented process improvements using custom application software that saved company $200k+ a year in employee time'
           ]
         }
       ]
