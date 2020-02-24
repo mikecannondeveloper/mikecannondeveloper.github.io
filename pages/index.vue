@@ -48,7 +48,7 @@ export default {
           dateRange: 'Oct 2019->Current',
           items: [
             'Built integrated UI solution for marketing campaign management using VueJS, Typescript, & RappidJS',
-            'Updated and maintained existing REST API solution using Java Springboot and PostgresSQL'.
+            'Updated and maintained existing REST API solution using Java Springboot and PostgresSQL'
           ]
         },
         {
