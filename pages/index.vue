@@ -37,7 +37,7 @@ export default {
   data() {
     return {
       skills: [
-        '5+ years of professional spftware development experience in Python, JavaScript (NodeJs, Vue, jQuery), PHP, and SQL ',
+        '5+ years of professional software development experience in Python, JavaScript (NodeJs, Vue, jQuery), PHP, and SQL ',
         'Agile Software Delivery',
         'Software Application Design, Development, Implementation, Documentation, and Training',
         'CompTIA A+ and Project+ certified'
