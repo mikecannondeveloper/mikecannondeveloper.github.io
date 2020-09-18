@@ -57,7 +57,7 @@ export default {
           items: [
             'Built multiple client applications in Electron-Vue (NodeJS runtime) with estimated ROI over $450k',
             'Built multiple internal facing web applications in VueJS hosted on Cloudfoundry using Jenkins for CI/CD with NodeJS & MongoDB',
-            'Successfully automated multiple projects, using Python scripts to convert, consolidate, or migrate data between platforms for multiple clients'
+            'Wrote and maintained advanced Python script used to translate Cisco ACE config files to to F5 config files. This script was compiled for Windows and macOS before distribution, and was integrated with existing SSO solution and an internally hosted analytics API',
           ]
         },
         {
