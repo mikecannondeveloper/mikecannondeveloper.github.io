@@ -1,6 +1,6 @@
   <template>
   <section class="container">
-    <div><br>
+    <div style="margin-bottom:50px;"><br>
       <h2 class="title">
         S. Michael Cannon
       </h2>
@@ -22,6 +22,13 @@
           <li>{{ item }}</li>
         </ul><br>
       </div>
+      <div>
+        <b>Education</b>
+      </div><hr><br>
+      <div v-for='program in education' :key="program.program">
+        {{ program.institution }}    
+        <b>{{ program.name }}</b>    
+      </div>
     </div>
     <p class="subtext"><small>This simple site was generated using <a href="https://vuejs.org/">Vue</a> + <a href="https://nuxtjs.org">Nuxt</a></small></p>
     <p class="subtext"><small>This page is print friendly for an easy to distribute pdf resume!</small></p>
@@ -38,11 +45,19 @@ export default {
   data() {
     return {
       skills: [
-        '6+ years of professional software development experience in Python, JavaScript (NodeJs, Vue, jQuery), PHP, C#, and SQL ',
+        '7+ years of professional software development experience in Java, Python, JavaScript (NodeJs, Vue, React, jQuery), PHP, C#, and SQL ',
         'Software Application Design, Development, Implementation, Documentation, and Training (using Agility)',
         'CompTIA A+ and Project+ certified'
       ],
       experience: [
+        {
+          jobRole: 'Software Engineer (Propelled Brands)',
+          dateRange: 'Oct 2020 - Current',
+          items: [
+            'Created integration testing solution to test synchronization of CRM data across multiple internal and external sources',
+            'Supported the creation of multiple new internal solutions in Google Cloud Platform (GCP)'
+          ]
+        },
         {
           jobRole: 'Frontend Developer (Capital One)',
           dateRange: 'Oct 2019 - Sep 2020',
@@ -72,6 +87,11 @@ export default {
             'Implemented emergency minimal ERP system to maintain records of transactions for later input into main SAP ERP system',
             'Implemented process improvements using custom application software that saved company $200k+ a year in employee time'
           ]
+        }
+      ],
+      education: [{
+          institution: 'Western Governors University',
+          name: 'Bachelor of Science, Software Development'
         }
       ]
     }
