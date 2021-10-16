@@ -47,7 +47,9 @@ const techSkills = {
         'Vue': 6,
         'Java': 2,
         'C#': 2,
+        'AWS': 2,
         'React': 1,
+        'Google Cloud Platform': 1
       }
 
 export default {
@@ -58,8 +60,8 @@ export default {
   data() {
     return {
       skills: [
-        '7+ years of professional software development experience in Java, Python, JavaScript (NodeJs, Vue, React), C#, and SQL ',
-        'Software Application Design, Development, Implementation, Documentation, and Training (using Agility)',
+        '7+ years of professional software development experience in Java, Python, JavaScript (NodeJs, Vue, React) ',
+        'Software Application Design, Development, Implementation, and Documentation',
         'CompTIA A+ and Project+ certified'
       ],
       experience: [
@@ -75,9 +77,8 @@ export default {
           jobRole: 'Frontend Developer (Capital One)',
           dateRange: 'Oct 2019 - Sep 2020',
           items: [
-            'Built integrated UI solution for marketing campaign management using VueJS, Typescript, & RappidJS',
-            'Updated and maintained existing REST API solution using Java Springboot and PostgresSQL (hosted as an AWS microservice)',
-            'Participated in API feature planning and implementation'
+            'Built integrated UI solution for marketing campaign management using VueJS & Typescript',
+            'Updated existing REST API solutions using Java Springboot and PostgresSQL (hosted on AWS)',
           ]
         },
         {
@@ -85,10 +86,8 @@ export default {
           dateRange: 'Aug 2016 - Sep 2019',
           items: [
             'Built multiple client applications in Electron-Vue (NodeJS runtime) with estimated ROI over $450k',
-            'Built multiple internal facing web applications in VueJS hosted on Cloudfoundry using Jenkins for CI/CD with NodeJS & MongoDB',
-            'Wrote and maintained advanced Python script used to translate Cisco ACE config files to F5 config files. This script was compiled for Windows and macOS before distribution, and was integrated with existing SSO solution and an internally hosted analytics API',
-            'Built a Microsoft Word Plugin in C# to aid users in generating templates for documentation automation projects',
-            'Implemented cross platform client end solution for docker based Ansible IT solution deployment automation'
+            'Built multiple internal facing web applications in VueJS, NodeJS & MongoDB',
+            'Wrote and maintained script used to translate Cisco ACE config files to F5 config files.',
           ]
         },
         {
@@ -96,9 +95,8 @@ export default {
           dateRange: 'Jun 2014 - Aug 2016',
           items: [
             'Automated SAP ERP report and data extraction for use in MySQL database',
-            'Built an intranet web application to manage production and reporting tools for management and other employees in PHP, MySQL, and jQuery',
-            'Implemented emergency minimal ERP system to maintain records of transactions for later input into main SAP ERP system',
-            'Implemented process improvements using custom application software that saved company $200k+ a year in employee time'
+            'Built an intranet web application to manage production and reporting tools in PHP, MySQL, and jQuery',
+            'Implemented process improvements using custom application software that saved company $200k+ a year'
           ]
         }
       ],
@@ -188,7 +186,7 @@ export default {
   font-size: 24px;
   color: #526488;
   word-spacing: 5px;
-  padding-bottom: 15px;
+  padding-bottom: 10px;
 }
 
 .jobrole {
