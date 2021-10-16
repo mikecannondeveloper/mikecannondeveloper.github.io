@@ -14,6 +14,7 @@
       <ul v-for='skill in skills' :key="skill.index">
         <li>{{ skill }}</li>
       </ul><br>
+      <bar-chart class="bar-chart" :data="barChartData" :options="barChartOptions" :height="100" />
       <div v-for='role in experience' :key="role.jobRole">
         <div class="jobrole">
           <b>{{ role.jobRole }}</b><p>{{ role.dateRange }}</p>
@@ -37,15 +38,27 @@
 
 <script>
 import AppLogo from '~/components/AppLogo.vue'
+import BarChart from '~/components/BarChart.js'
+
+const techSkills = {
+        'JavaScript': 7,
+        'NodeJS': 6,
+        'Python': 6,
+        'Vue': 6,
+        'Java': 2,
+        'C#': 2,
+        'React': 1,
+      }
 
 export default {
   components: {
-    AppLogo
+    AppLogo,
+    BarChart
   },
   data() {
     return {
       skills: [
-        '7+ years of professional software development experience in Java, Python, JavaScript (NodeJs, Vue, React, jQuery), PHP, C#, and SQL ',
+        '7+ years of professional software development experience in Java, Python, JavaScript (NodeJs, Vue, React), C#, and SQL ',
         'Software Application Design, Development, Implementation, Documentation, and Training (using Agility)',
         'CompTIA A+ and Project+ certified'
       ],
@@ -93,7 +106,57 @@ export default {
           institution: 'Western Governors University',
           name: 'Bachelor of Science, Software Development'
         }
-      ]
+      ],
+      barChartData: {
+        labels: Object.keys(techSkills),
+        datasets: [
+          {
+            label: 'Years',
+            // backgroundColor: ["red", "orange", "yellow"],
+            backgroundColor: Object.keys(techSkills).map(x=>'rgb(54, 162, 235)'),
+            data: Object.values(techSkills)
+          }
+        ]
+      },
+      barChartOptions: {
+        layout: {
+        padding: {
+            left: 0,
+            right: 50,
+            top: 0,
+            bottom: 0
+        }
+    },
+        indexAxis: 'y',
+        responsive: true,
+        legend: {
+          display: false,
+        },
+        title: {
+          display: false,
+          text: 'Skills'
+        },
+        scales: {
+          xAxes: [
+            {
+              ticks: {
+                beginAtZero: true,
+                display: false
+              },
+              gridLines: {
+                display: false
+              },
+
+            }
+          ],
+          yAxes: [{
+            gridLines: {
+                display: false
+              },
+          }]
+        }
+      }
+
     }
   }
 }
@@ -130,6 +193,10 @@ export default {
 
 .jobrole {
   text-align: left;
+}
+
+.bar-chart {
+  padding-bottom: 25px;
 }
 
 .img-circle {
@@ -186,5 +253,9 @@ li {
     display: block;
     text-align: center;
   }
+  .bar-chart {
+    display: none;
+  }
+
 }
 </style>

@@ -17,8 +17,12 @@
   },
   "dependencies": {
     "@nuxtjs/google-analytics": "^2.4.0",
+    "chart.js": "^2.9.4",
     "nuxt": "^2.14.5",
-    "vue": "^2.6.12"
+    "sass-loader": "^12.2.0",
+    "scss": "^0.2.4",
+    "vue": "^2.6.12",
+    "vue-chartjs": "^3.5.1"
   },
   "devDependencies": {
     "babel-eslint": "^8.2.6",
