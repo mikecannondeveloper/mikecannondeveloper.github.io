@@ -1,6 +1,6 @@
   <template>
   <section class="container">
-    <div style="margin-bottom:50px;"><br>
+    <div style="margin-bottom:50px;"><br/>
       <h2 class="title">
         S. Michael Cannon
       </h2>
@@ -9,23 +9,31 @@
         Full Stack Software Developer
       </h3>
       <p class="siteUrl"><a href="https://mikecannon.dev">https://mikecannon.dev</a></p>
-      <p class="email"><a href="mailto:mikecannondeveloper@gmail.com">mikecannondeveloper@gmail.com</a></p><br>
-      <b>Relevant Skills</b><hr><br>
+      <p class="email"><a href="mailto:mikecannondeveloper@gmail.com">mikecannondeveloper@gmail.com</a></p><br/>
+      <b>Relevant Skills</b><hr><br/>
       <ul v-for='skill in skills' :key="skill.index">
         <li>{{ skill }}</li>
-      </ul><br>
+      </ul><br/>
       <bar-chart class="bar-chart" :data="barChartData" :options="barChartOptions" :height="100" />
+      <div>
+        <b>Certifications</b>
+      </div><hr><br/>
+      <div class="cert-container">
+      <div v-for='cert in certs' :key="cert.index">
+        <li><b>{{ cert }}</b></li>    
+      </div>
+      </div><br/>
       <div v-for='role in experience' :key="role.jobRole">
         <div class="jobrole">
           <b>{{ role.jobRole }}</b><p>{{ role.dateRange }}</p>
-        </div><hr><br>
+        </div><hr><br/>
         <ul v-for='item in role.items' :key="item.index">
           <li>{{ item }}</li>
-        </ul><br>
+        </ul><br/>
       </div>
       <div>
         <b>Education</b>
-      </div><hr><br>
+      </div><hr><br/>
       <div v-for='program in education' :key="program.program">
         {{ program.institution }}    
         <b>{{ program.name }}</b>    
@@ -43,13 +51,12 @@ import BarChart from '~/components/BarChart.js'
 const techSkills = {
         'JavaScript': 7,
         'NodeJS': 6,
-        'Python': 6,
+        'Python': 3,
         'Vue': 6,
-        'Java': 2,
-        'C#': 2,
+        'Java': 1,
         'AWS': 2,
         'React': 1,
-        'Google Cloud Platform': 1
+        'GCP': 1
       }
 
 export default {
@@ -62,12 +69,22 @@ export default {
       skills: [
         '7+ years of professional software development experience in Java, Python, JavaScript (NodeJs, Vue, React) ',
         'Software Application Design, Development, Implementation, and Documentation',
-        'CompTIA A+ and Project+ certified'
+      ],
+      certs: [
+        'CompTIA A+',
+        'CompTIA Project+',
       ],
       experience: [
+        // {
+        //   jobRole: 'Consultant (Daugherty Consulting)',
+        //   dateRange: 'Mar 2022 - Current',
+        //   items: [
+        //     'Worked with a team of developers to develop a web application for a Bayer health company',
+        //   ]
+        // },
         {
           jobRole: 'Software Engineer (Propelled Brands)',
-          dateRange: 'Oct 2020 - Current',
+          dateRange: 'Oct 2020 - Mar 2022',
           items: [
             'Created integration testing solution to test synchronization of CRM data across multiple internal and external sources',
             'Supported the creation of multiple new internal solutions in Google Cloud Platform (GCP)'
@@ -219,6 +236,18 @@ export default {
   }
 }
 
+.cert-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+
+.cert-container li {
+  margin-left: 25px;
+  list-style-position: inside;
+}
+
 li {
   text-align: left;
 }
@@ -238,6 +267,12 @@ li {
 }
 
 @media print {
+  .title {
+    font-size: 24px;
+  }
+  .subtitle {
+    font-size: 18px;
+  }
   .img-circle {
     display: none;
   }
