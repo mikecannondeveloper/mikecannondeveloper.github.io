@@ -73,6 +73,7 @@ export default {
       certs: [
         'CompTIA A+',
         'CompTIA Project+',
+        'AWS Cloud Practitioner',
       ],
       experience: [
         // {
