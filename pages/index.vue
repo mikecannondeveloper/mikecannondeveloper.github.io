@@ -1,16 +1,22 @@
   <template>
   <section class="container">
     <div style="margin-bottom:50px;"><br/>
-      <h2 class="title">
-        S. Michael Cannon
-      </h2>
-      <img class="img-circle" src="~/assets/profile.jpg">
-      <h3 class="subtitle">
-        Full Stack Software Developer
-      </h3>
-      <p class="siteUrl"><a href="https://mikecannon.dev">https://mikecannon.dev</a></p>
-      <p class="email"><a href="mailto:mikecannondeveloper@gmail.com">mikecannondeveloper@gmail.com</a></p><br/>
-      <b>Relevant Skills</b><hr><br/>
+      <div class="page-header">
+        <div>
+        <h2 class="title">
+          S. Michael Cannon
+        </h2>
+        <img class="img-circle" src="~/assets/profile.jpg">
+        <h3 class="subtitle">
+          Full Stack Software Developer
+        </h3>
+        </div>
+        <div>
+          <p class="siteUrl"><a href="https://mikecannon.dev">https://mikecannon.dev</a></p>
+          <p class="email"><a href="mailto:mikecannondeveloper@gmail.com">mikecannondeveloper@gmail.com</a></p>
+        </div>
+      </div><br/>
+      <b>Skills</b><hr><br/>
       <ul v-for='skill in skills' :key="skill.index">
         <li>{{ skill }}</li>
       </ul><br/>
@@ -24,9 +30,15 @@
       </div>
       </div><br/>
       <div v-for='role in experience' :key="role.jobRole">
-        <div class="jobrole">
-          <b>{{ role.jobRole }}</b><p>{{ role.dateRange }}</p>
-        </div><hr><br/>
+        <div class="job-header">
+          <div class="job-role">
+            <b>{{ role.jobRole }}</b><br/>
+            <p>{{ role.company }}</p>
+          </div>
+          <div class="date-range">
+            <p>{{ role.dateRange }}</p>
+          </div>
+        </div>
         <ul v-for='item in role.items' :key="item.index">
           <li>{{ item }}</li>
         </ul><br/>
@@ -55,7 +67,7 @@ const techSkills = {
         'Vue': 6,
         'Java': 1,
         'AWS': 2,
-        'React': 1,
+        'React': 2,
         'GCP': 1
       }
 
@@ -66,8 +78,10 @@ export default {
   },
   data() {
     return {
+      email: "mikecannondeveloper@gmail.com",
       skills: [
-        '7+ years of professional software development experience in Java, Python, JavaScript (NodeJs, Vue, React) ',
+        '8 years of professional software development experience in Java, Python, JavaScript (NodeJs, Vue, React, Typescript) ',
+        '3 years of professional software development experience in cloud based environments (AWS, GCP)',
         'Software Application Design, Development, Implementation, and Documentation',
       ],
       certs: [
@@ -77,44 +91,47 @@ export default {
       ],
       experience: [
         // {
-        //   jobRole: 'Consultant (Daugherty Consulting)',
-        //   dateRange: 'Mar 2022 - Current',
+        //   jobRole: 'Consultant',
+        //   company: 'Daugherty Consulting',
+        //   dateRange: '2022',
         //   items: [
-        //     'Worked with a team of developers to develop a web application for a Bayer health company',
+        //     'Developed web applications managing Carbon Credits for Bayer Digital Farming Products',
         //   ]
         // },
         {
-          jobRole: 'Software Engineer (Propelled Brands)',
-          dateRange: 'Oct 2020 - Mar 2022',
+          jobRole: 'Software Engineer',
+          company: 'Propelled Brands',
+          dateRange: '2020 - 2022',
           items: [
             'Created integration testing solution to test synchronization of CRM data across multiple internal and external sources',
             'Supported the creation of multiple new internal solutions in Google Cloud Platform (GCP)'
           ]
         },
         {
-          jobRole: 'Frontend Developer (Capital One)',
-          dateRange: 'Oct 2019 - Sep 2020',
+          jobRole: 'Frontend Developer',
+          company: 'Capital One',
+          dateRange: '2019 - 2020',
           items: [
             'Built integrated UI solution for marketing campaign management using VueJS & Typescript',
-            'Updated existing REST API solutions using Java Springboot and PostgresSQL (hosted on AWS)',
+            'Updated existing REST API solutions using Springboot (hosted on AWS)',
           ]
         },
         {
-          jobRole: 'Core Automation Developer (World Wide Technology)',
-          dateRange: 'Aug 2016 - Sep 2019',
+          jobRole: 'Core Automation Developer',
+          company: 'World Wide Technology',
+          dateRange: '2016 - 2019',
           items: [
-            'Built multiple client applications in Electron-Vue (NodeJS runtime) with estimated ROI over $450k',
-            'Built multiple internal facing web applications in VueJS, NodeJS & MongoDB',
+            'Built multiple client and web applications in VueJS and Electron with ROI over $450k',
             'Wrote and maintained script used to translate Cisco ACE config files to F5 config files.',
           ]
         },
         {
-          jobRole: 'Analyst/Programmer (World Wide Technology)',
-          dateRange: 'Jun 2014 - Aug 2016',
+          jobRole: 'Analyst/Programmer',
+          company: 'World Wide Technology',
+          dateRange: '2014 - 2016',
           items: [
             'Automated SAP ERP report and data extraction for use in MySQL database',
-            'Built an intranet web application to manage production and reporting tools in PHP, MySQL, and jQuery',
-            'Implemented process improvements using custom application software that saved company $200k+ a year'
+            'Built an intranet web application in PHP, MySQL, and jQuery that saved warehouse $200k+ a year'
           ]
         }
       ],
@@ -207,8 +224,19 @@ export default {
   padding-bottom: 10px;
 }
 
-.jobrole {
+.job-role {
   text-align: left;
+}
+
+.date-range {
+  text-align: right;
+}
+
+.job-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0;
 }
 
 .bar-chart {
@@ -234,6 +262,9 @@ export default {
     position: relative;
     margin-bottom: 15px;
     float: none;
+  }
+  .bar-chart {
+    display: none;
   }
 }
 
@@ -270,9 +301,11 @@ li {
 @media print {
   .title {
     font-size: 24px;
+    text-align: left;
   }
   .subtitle {
     font-size: 18px;
+    text-align: left;
   }
   .img-circle {
     display: none;
@@ -280,15 +313,18 @@ li {
   .subtext {
     display: none;
   }
-  a:link, a:visited {
-    color: #000;
-  }
-  .siteUrl {
-    display: block;
-    text-align: center;
+  .siteUrl, .email {
+    position: relative;
+    text-align: right;
   }
   .bar-chart {
     display: none;
+  }
+  .page-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
   }
 
 }
