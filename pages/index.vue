@@ -88,6 +88,7 @@ export default {
         'CompTIA A+',
         'CompTIA Project+',
         'AWS Cloud Practitioner',
+        'AWS Solutions Architect - Associate',
         'GCP Cloud Engineer'
       ],
       experience: [
