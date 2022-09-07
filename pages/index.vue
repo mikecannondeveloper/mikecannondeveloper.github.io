@@ -6,7 +6,7 @@
         <h2 class="title">
           S. Michael Cannon
         </h2>
-        <img class="img-circle" src="~/assets/profile.jpg">
+        <img class="img-circle" src="@/assets/profile.jpg"/>
         <h3 class="subtitle">
           Full Stack Software Developer
         </h3>
@@ -24,8 +24,11 @@
         <b>Certifications</b>
       </div><hr><br/>
       <div class="cert-container">
-      <div v-for='cert in certs' :key="cert.index">
-        <li><b>{{ cert }}</b></li>    
+      <div v-for='cert in certs' :key="cert.name">
+        <li>
+          <b class="certTitle">{{ cert.name }}</b><br/>
+          <img class="badge" :src="cert.badge"/>
+        </li>    
       </div>
       </div><br/>
       <div v-for='role in experience' :key="role.jobRole">
@@ -67,25 +70,40 @@ export default {
       email: "mikecannondeveloper@gmail.com",
       skills: [
         '8 years of professional software development experience in Java, Python, JavaScript (NodeJs, Vue, React, Typescript) ',
-        '3 years of professional software development experience in cloud based environments (AWS, GCP)',
+        '4 years of professional software development experience in cloud based environments (AWS, GCP)',
         'Software Application Design, Development, Implementation, and Documentation',
       ],
       certs: [
-        'CompTIA A+',
-        'CompTIA Project+',
-        'AWS Cloud Practitioner',
-        'AWS Solutions Architect - Associate',
-        'GCP Cloud Engineer'
+        {
+          name: 'CompTIA A+',
+          badge: require('~/assets/CompTIA_A.png')
+        },
+        {
+          name: 'CompTIA Project+',
+          badge: require('~/assets/CompTIA_Project.png')
+        },
+        {
+          name: 'AWS Cloud Practitioner',
+          badge: require('~/assets/AWS_Cloud_Practioner.png')
+        },
+        {
+          name: 'AWS Solutions Architect',
+          badge: require('~/assets/AWS_Solution_Architect.png')
+        },
+        {
+          name: 'GCP Cloud Engineer',
+          badge: require('~/assets/GCP_Cloud_Engineer.png')
+        }
       ],
       experience: [
-        // {
-        //   jobRole: 'Consultant',
-        //   company: 'Daugherty Consulting',
-        //   dateRange: '2022',
-        //   items: [
-        //     'Developed web applications managing Carbon Credits for Bayer Digital Farming Products',
-        //   ]
-        // },
+        {
+          jobRole: 'Consultant',
+          company: 'Daugherty Business Solutions',
+          dateRange: '2022',
+          items: [
+            'Developed multiple web applications managing Carbon Credits for Bayer Digital Farming Solutions using AWS architecture',
+          ]
+        },
         {
           jobRole: 'Software Engineer',
           company: 'Propelled Brands',
@@ -109,7 +127,7 @@ export default {
           company: 'World Wide Technology',
           dateRange: '2016 - 2019',
           items: [
-            'Built multiple client and web applications in VueJS and Electron with ROI over $450k',
+            'Designed and implemented multiple client and web applications in VueJS and Electron with ROI over $450k',
             'Wrote and maintained script used to translate Cisco ACE config files to F5 config files.',
           ]
         },
@@ -211,10 +229,12 @@ export default {
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: flex-start;
+  list-style-type: none;
 }
 
 .cert-container li {
-  margin-left: 25px;
+  margin-top: 25px;
+  margin-left: 20px;
   list-style-position: inside;
 }
 
@@ -234,6 +254,11 @@ li {
   .siteUrl {
     display: none;
   }
+}
+
+.badge {
+ max-height: 75px;
+ margin-top: 15px;
 }
 
 @media print {
@@ -263,6 +288,9 @@ li {
     justify-content: space-between;
     align-items: center;
     padding: 10px 0;
+  }
+  .badge {
+    display: none;
   }
 
 }
