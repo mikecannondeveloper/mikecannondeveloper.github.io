@@ -17,12 +17,12 @@
         </div>
       </div><br/>
       <b>Skills</b><hr><br/>
-      <ul v-for='skill in skills' :key="skill.index">
+      <ul class="skills" v-for='skill in skills' :key="skill.index">
         <li>{{ skill }}</li>
       </ul><br/>
       <div>
         <b>Certifications</b>
-      </div><hr><br/>
+      </div><hr>
       <div class="cert-container">
       <div v-for='cert in certs' :key="cert.name">
         <li>
@@ -185,6 +185,7 @@ li {
 @media print {
   .title {
     font-size: 24px;
+    font-weight: 500;
     text-align: left;
   }
   .subtitle {
