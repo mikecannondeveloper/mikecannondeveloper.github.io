@@ -60,93 +60,14 @@
 
 <script>
 import AppLogo from '~/components/AppLogo.vue'
+import data from './data';
 
 export default {
   components: {
     AppLogo
   },
   data() {
-    return {
-      email: "mikecannondeveloper@gmail.com",
-      skills: [
-        '8 years of professional software development experience in Java, Python, JavaScript (NodeJs, Vue, React, Typescript) ',
-        '4 years of professional software development experience in cloud based environments (AWS, GCP)',
-        'Software Application Design, Development, Implementation, and Documentation',
-      ],
-      certs: [
-        {
-          name: 'CompTIA A+',
-          badge: require('~/assets/CompTIA_A.png')
-        },
-        {
-          name: 'CompTIA Project+',
-          badge: require('~/assets/CompTIA_Project.png')
-        },
-        {
-          name: 'AWS Cloud Practitioner',
-          badge: require('~/assets/AWS_Cloud_Practioner.png')
-        },
-        {
-          name: 'AWS Solutions Architect',
-          badge: require('~/assets/AWS_Solution_Architect.png')
-        },
-        {
-          name: 'GCP Cloud Engineer',
-          badge: require('~/assets/GCP_Cloud_Engineer.png')
-        }
-      ],
-      experience: [
-        {
-          jobRole: 'Consultant',
-          company: 'Daugherty Business Solutions',
-          dateRange: '2022',
-          items: [
-            'Developed multiple web applications managing Carbon Credits for Bayer Digital Farming Solutions using AWS architecture',
-          ]
-        },
-        {
-          jobRole: 'Software Engineer',
-          company: 'Propelled Brands',
-          dateRange: '2020 - 2022',
-          items: [
-            'Created integration testing solution to test synchronization of CRM data across multiple internal and external sources',
-            'Supported the creation of multiple new internal solutions in Google Cloud Platform (GCP)'
-          ]
-        },
-        {
-          jobRole: 'Frontend Developer',
-          company: 'Capital One',
-          dateRange: '2019 - 2020',
-          items: [
-            'Built integrated UI solution for marketing campaign management using VueJS & Typescript',
-            'Updated existing REST API solutions using Springboot (hosted on AWS)',
-          ]
-        },
-        {
-          jobRole: 'Core Automation Developer',
-          company: 'World Wide Technology',
-          dateRange: '2016 - 2019',
-          items: [
-            'Designed and implemented multiple client and web applications in VueJS and Electron with ROI over $450k',
-            'Wrote and maintained script used to translate Cisco ACE config files to F5 config files.',
-          ]
-        },
-        {
-          jobRole: 'Analyst/Programmer',
-          company: 'World Wide Technology',
-          dateRange: '2014 - 2016',
-          items: [
-            'Automated SAP ERP report and data extraction for use in MySQL database',
-            'Built an intranet web application in PHP, MySQL, and jQuery that saved warehouse $200k+ a year'
-          ]
-        }
-      ],
-      education: [{
-          institution: 'Western Governors University',
-          name: 'Bachelor of Science, Software Development'
-        }
-      ]
-    }
+    return data
   }
 }
 </script>
