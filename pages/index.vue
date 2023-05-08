@@ -59,8 +59,8 @@
 </template>
 
 <script>
-import AppLogo from '~/components/AppLogo.vue'
-import data from './data';
+import AppLogo from '~/components/AppLogo.vue';
+import data from '../assets/data';
 
 export default {
   components: {
