@@ -4114,7 +4114,7 @@ function _expandFromEnv(value) {
 const _inlineRuntimeConfig = {
   "app": {
     "baseURL": "/",
-    "buildId": "e76baeaf-3ee5-4f05-8bde-7a6390f5f179",
+    "buildId": "4103aed9-a226-48c4-89a5-2001d3e160e8",
     "buildAssetsDir": "/_nuxt/",
     "cdnURL": ""
   },
@@ -4958,103 +4958,103 @@ const plugins = [
 ];
 
 const assets = {
-  "/_nuxt/CMzlSLjY.js": {
+  "/_nuxt/C7MYJjpX.js": {
     "type": "text/javascript; charset=utf-8",
-    "etag": "\"26e2-W0uXhUcFLAEybPFs3z+0nNY8vSk\"",
-    "mtime": "2026-10-30T00:17:52.782Z",
-    "size": 9954,
-    "path": "../public/_nuxt/CMzlSLjY.js"
-  },
-  "/_nuxt/AWS_Cloud_Practioner.B2pPG_un.png": {
-    "type": "image/png",
-    "etag": "\"f29c-9U7kfDXeioGSMAGk2lPtwGmhbE8\"",
-    "mtime": "2026-10-30T00:17:52.782Z",
-    "size": 62108,
-    "path": "../public/_nuxt/AWS_Cloud_Practioner.B2pPG_un.png"
+    "etag": "\"a63-n/NwoeQILV6edcViEIMOvoGrlYQ\"",
+    "mtime": "2026-10-30T00:19:04.414Z",
+    "size": 2659,
+    "path": "../public/_nuxt/C7MYJjpX.js"
   },
   "/_nuxt/AWS_Solution_Architect.DU96ANxh.png": {
     "type": "image/png",
     "etag": "\"ed5c-4wQb9vbis9C5fuelq6NRiu/GAQg\"",
-    "mtime": "2026-10-30T00:17:52.782Z",
+    "mtime": "2026-10-30T00:19:04.414Z",
     "size": 60764,
     "path": "../public/_nuxt/AWS_Solution_Architect.DU96ANxh.png"
   },
-  "/_nuxt/C7MYJjpX.js": {
+  "/_nuxt/CMzlSLjY.js": {
     "type": "text/javascript; charset=utf-8",
-    "etag": "\"a63-n/NwoeQILV6edcViEIMOvoGrlYQ\"",
-    "mtime": "2026-10-30T00:17:52.782Z",
-    "size": 2659,
-    "path": "../public/_nuxt/C7MYJjpX.js"
+    "etag": "\"26e2-W0uXhUcFLAEybPFs3z+0nNY8vSk\"",
+    "mtime": "2026-10-30T00:19:04.414Z",
+    "size": 9954,
+    "path": "../public/_nuxt/CMzlSLjY.js"
   },
   "/_nuxt/entry.DLFBOm6a.css": {
     "type": "text/css; charset=utf-8",
     "etag": "\"97a-hkdrfBS32+hLnp60vSmEGhaC8AE\"",
-    "mtime": "2026-10-30T00:17:52.782Z",
+    "mtime": "2026-10-30T00:19:04.414Z",
     "size": 2426,
     "path": "../public/_nuxt/entry.DLFBOm6a.css"
-  },
-  "/_nuxt/CompTIA_Project.CWsTTEBu.png": {
-    "type": "image/png",
-    "etag": "\"e1d9-9Cmpg/sLvnqxL2QPH0y/OSRunCA\"",
-    "mtime": "2026-10-30T00:17:52.782Z",
-    "size": 57817,
-    "path": "../public/_nuxt/CompTIA_Project.CWsTTEBu.png"
-  },
-  "/_nuxt/GCP_Cloud_Engineer.CFjmV_B1.png": {
-    "type": "image/png",
-    "etag": "\"596e-EF+AnyXsUU1k8r8gZATszDCp59s\"",
-    "mtime": "2026-10-30T00:17:52.782Z",
-    "size": 22894,
-    "path": "../public/_nuxt/GCP_Cloud_Engineer.CFjmV_B1.png"
   },
   "/_nuxt/error-500.CmR4p1fc.css": {
     "type": "text/css; charset=utf-8",
     "etag": "\"79f-oUFNPOuVEcj5aJV0yQGGzo21VAE\"",
-    "mtime": "2026-10-30T00:17:52.783Z",
+    "mtime": "2026-10-30T00:19:04.414Z",
     "size": 1951,
     "path": "../public/_nuxt/error-500.CmR4p1fc.css"
   },
   "/_nuxt/error-404.DpKY_dMl.css": {
     "type": "text/css; charset=utf-8",
     "etag": "\"a8d-ikaaK5LbtZuaZygnIu5mAjYDRiQ\"",
-    "mtime": "2026-10-30T00:17:52.782Z",
+    "mtime": "2026-10-30T00:19:04.414Z",
     "size": 2701,
     "path": "../public/_nuxt/error-404.DpKY_dMl.css"
   },
-  "/_nuxt/builds/latest.json": {
-    "type": "application/json",
-    "etag": "\"47-WCi6rZRLyfebQ9D3Dhy5zSvJjQk\"",
-    "mtime": "2026-10-30T00:17:52.779Z",
-    "size": 71,
-    "path": "../public/_nuxt/builds/latest.json"
+  "/_nuxt/CompTIA_Project.CWsTTEBu.png": {
+    "type": "image/png",
+    "etag": "\"e1d9-9Cmpg/sLvnqxL2QPH0y/OSRunCA\"",
+    "mtime": "2026-10-30T00:19:04.414Z",
+    "size": 57817,
+    "path": "../public/_nuxt/CompTIA_Project.CWsTTEBu.png"
   },
   "/_nuxt/TQU2rlDG.js": {
     "type": "text/javascript; charset=utf-8",
     "etag": "\"22d31-/2IlcJWkOQOYwxw0ZcpeY3x1Xw0\"",
-    "mtime": "2026-10-30T00:17:52.783Z",
+    "mtime": "2026-10-30T00:19:04.414Z",
     "size": 142641,
     "path": "../public/_nuxt/TQU2rlDG.js"
   },
-  "/_nuxt/builds/meta/e76baeaf-3ee5-4f05-8bde-7a6390f5f179.json": {
+  "/_nuxt/builds/latest.json": {
     "type": "application/json",
-    "etag": "\"58-4+1cR2gB3QwmmNQBwmKKGTLbhpQ\"",
-    "mtime": "2026-10-30T00:17:52.775Z",
+    "etag": "\"47-TGkDJq4m0UQYVO0yz79aRncv7cU\"",
+    "mtime": "2026-10-30T00:19:04.410Z",
+    "size": 71,
+    "path": "../public/_nuxt/builds/latest.json"
+  },
+  "/_nuxt/builds/meta/4103aed9-a226-48c4-89a5-2001d3e160e8.json": {
+    "type": "application/json",
+    "etag": "\"58-29HVqru1snDdhLYIh1Q9en+lTAo\"",
+    "mtime": "2026-10-30T00:19:04.407Z",
     "size": 88,
-    "path": "../public/_nuxt/builds/meta/e76baeaf-3ee5-4f05-8bde-7a6390f5f179.json"
+    "path": "../public/_nuxt/builds/meta/4103aed9-a226-48c4-89a5-2001d3e160e8.json"
   },
   "/_nuxt/CompTIA_A.B3LMy2Fh.png": {
     "type": "image/png",
     "etag": "\"e247-ZA9FxsVCCMooa1djFAyeY/p9Hpg\"",
-    "mtime": "2026-10-30T00:17:52.782Z",
+    "mtime": "2026-10-30T00:19:04.414Z",
     "size": 57927,
     "path": "../public/_nuxt/CompTIA_A.B3LMy2Fh.png"
+  },
+  "/_nuxt/AWS_Cloud_Practioner.B2pPG_un.png": {
+    "type": "image/png",
+    "etag": "\"f29c-9U7kfDXeioGSMAGk2lPtwGmhbE8\"",
+    "mtime": "2026-10-30T00:19:04.414Z",
+    "size": 62108,
+    "path": "../public/_nuxt/AWS_Cloud_Practioner.B2pPG_un.png"
   },
   "/_nuxt/profile.Ba-8h1wt.jpg": {
     "type": "image/jpeg",
     "etag": "\"255cf-bEOJ1VOUllV8YDwP9KHHMYX51II\"",
-    "mtime": "2026-10-30T00:17:52.783Z",
+    "mtime": "2026-10-30T00:19:04.414Z",
     "size": 153039,
     "path": "../public/_nuxt/profile.Ba-8h1wt.jpg"
+  },
+  "/_nuxt/GCP_Cloud_Engineer.CFjmV_B1.png": {
+    "type": "image/png",
+    "etag": "\"596e-EF+AnyXsUU1k8r8gZATszDCp59s\"",
+    "mtime": "2026-10-30T00:19:04.414Z",
+    "size": 22894,
+    "path": "../public/_nuxt/GCP_Cloud_Engineer.CFjmV_B1.png"
   }
 };
 
