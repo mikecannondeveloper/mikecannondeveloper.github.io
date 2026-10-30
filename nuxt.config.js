@@ -19,8 +19,7 @@ export default defineNuxtConfig({
   pages: false,
   modules: 
     // Simple usage
-    ['nuxt-gtag'], 
-    
+    ['nuxt-gtag', '@nuxt/image'], 
  gtag: {
       id: 'UA-73202553-1'
     }

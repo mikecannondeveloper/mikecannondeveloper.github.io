@@ -26,8 +26,8 @@
       <div class="cert-container">
       <div v-for='cert in certs' :key="cert.name">
         <li>
-          <b class="certTitle">{{ cert.name }}</b><br/>
-          <img class="badge" :src=getImageUrl(cert.badge) />
+            <b class="certTitle">{{ cert.name }}</b><br/>
+          <Badge :name=cert.badge></Badge>
         </li>    
       </div>
       </div><br/>
@@ -57,21 +57,15 @@
     <p class="subtext"><small>This page is print friendly for an easy to distribute pdf resume!</small></p>
   </section>
 </template>
-
 <script>
 import AppLogo from '~/components/AppLogo.vue';
-import data from './assets/data';
+import data from './assets/data.js';
+import Badge from './components/Badge.vue';
 
 export default {
   components: {
-    AppLogo
-  },
-  methods: {
-    getImageUrl(imagename) {
-      const imageUrl = new URL(`/assets/${imagename}.png`, import.meta.url).href
-      return imageUrl;
-
-    }
+    AppLogo,
+    Badge
   },
   data() {
     return data
@@ -147,9 +141,6 @@ export default {
     margin-bottom: 15px;
     float: none;
   }
-  .bar-chart {
-    display: none;
-  }
 }
 
 .cert-container {
@@ -182,11 +173,6 @@ li {
   .siteUrl {
     display: none;
   }
-}
-
-.badge {
- max-height: 75px;
- margin-top: 15px;
 }
 
 @media print {
