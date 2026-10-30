@@ -1,4 +1,5 @@
-  <template>
+  
+<template>
   <section class="container">
     <div style="margin-bottom:50px;"><br/>
       <div class="page-header">
@@ -27,7 +28,7 @@
       <div v-for='cert in certs' :key="cert.name">
         <li>
           <b class="certTitle">{{ cert.name }}</b><br/>
-          <img class="badge" :src="cert.badge"/>
+          <img class="badge" :src=url(cert.badge) />
         </li>    
       </div>
       </div><br/>

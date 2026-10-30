@@ -1,36 +1,46 @@
 export default {
-  email: "mikecannondeveloper@gmail.com",
+  email: "mikecannondeveloper@proton.me",
   skills: [
-    '9 years of professional software development experience in Go, Java, Python, JavaScript (NodeJs, Vue, React, Typescript) ',
-    '5 years of professional software development experience in cloud based environments (AWS, GCP, Azure)',
-    'Software Application Design, Development, Implementation, Testing, and Documentation',
-    'Currently developing skills in Machine Learning and AI'
+    '12+ years of professional software development experience in Go, Java, Python, JavaScript (NodeJs, Vue, React, Typescript) ',
+    '7 years of professional software development experience in cloud based environments (AWS, GCP, Azure)',
+    'Software Application Design, Development, Implementation, Testing, and Documentation'
   ],
   certs: [{
       name: 'CompTIA A+',
-      badge: require('~/assets/CompTIA_A.png')
+      badge: 'CompTIA_A'
     },
     {
       name: 'CompTIA Project+',
-      badge: require('~/assets/CompTIA_Project.png')
+      badge:'CompTIA_Project'
     },
     {
       name: 'AWS Cloud Practitioner',
-      badge: require('~/assets/AWS_Cloud_Practioner.png')
+      badge: 'AWS_Cloud_Practioner'
     },
     {
       name: 'AWS Solutions Architect',
-      badge: require('~/assets/AWS_Solution_Architect.png')
+      badge: 'AWS_Solution_Architect'
     },
     {
       name: 'GCP Cloud Engineer',
-      badge: require('~/assets/GCP_Cloud_Engineer.png')
+      badge: 'GCP_Cloud_Engineer'
     }
   ],
-  experience: [{
+  experience: [
+    {
+      jobRole: 'Senior Full Stack Software Engineer (Lead)',
+      company: 'ALKU',
+      dateRange: '2024-Present',
+      items: [
+        'Took ownership and led the development of internally built call list management software (ReactJS, Apollo, GraphQL, NodeJS, PostgreSQL, AWS Lambda)',
+        'Designed, developed and deployed a new internal job leads management application',
+        'Led two application enhancements to support the Summer intern program',
+        'Productionized, enhanced, and developed an advanced architecture for an internal agentic based AI solution powered by Claude that could traverse data within our internal Data Warehouse hosted in Snowflake'
+      ]
+    },{
       jobRole: 'Consultant',
       company: 'Daugherty Business Solutions',
-      dateRange: '2022-Present',
+      dateRange: '2022-2024',
       items: [
         'Developed multiple web application POCs for managing Carbon Credits for Bayer Digital Farming Solutions using AWS microservice architecture (NodeJS, ReactJS, Azure LDAP, DynamoDB)',
         'Implemented feature enhancement for Credit Card Payment system at The Home Depot (Go, React, Redis, CockroachDB)',

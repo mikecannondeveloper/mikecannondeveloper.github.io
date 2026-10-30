@@ -1,8 +1,10 @@
-// only add `router.base = '/<repository-name>/'` if `DEPLOY_ENV` is `GH_PAGES`
-module.exports = {
-  /*
-  ** Headers of the page
-  */
+import { fileURLToPath } from 'node:url'
+
+export default defineNuxtConfig({
+  alias: {
+    'images': fileURLToPath(new URL('./assets/images', import.meta.url)),
+  },
+  compatibilityDate: '2026-10-28',
   head: {
     title: 'S. Michael Cannon',
     meta: [
@@ -14,33 +16,12 @@ module.exports = {
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
     ]
   },
-  /*
-  ** Customize the progress bar color
-  */
-  loading: { color: '#3B8070' },
-  /*
-  ** Build configuration
-  */
-  build: {
-    /*
-    ** Run ESLint on save
-    */
-    extend (config, { isDev, isClient }) {
-      if (isDev && isClient) {
-        config.module.rules.push({
-          enforce: 'pre',
-          test: /\.(js|vue)$/,
-          loader: 'eslint-loader',
-          exclude: /(node_modules)/
-        })
-      }
-    }
-  },
-  modules: [
+  pages: false,
+  modules: 
     // Simple usage
-    ['@nuxtjs/google-analytics', {
+    ['nuxt-gtag'], 
+    
+ gtag: {
       id: 'UA-73202553-1'
-    }]
- ],
- target: 'static'
-}
+    }
+})
