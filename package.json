@@ -12,7 +12,7 @@
     "generate": "nuxt generate",
     "build:gh-pages": "DEPLOY_ENV=GH_PAGES nuxt build",
     "generate:gh-pages": "DEPLOY_ENV=GH_PAGES nuxt generate",
-    "deploy": "push-dir --dir=dist --branch=master --cleanup"
+    "deploy": "push-dir --dir=.output --branch=master --cleanup"
   },
   "devDependencies": {
     "@nuxtjs/google-analytics": "^2.4.0",
